@@ -98,3 +98,9 @@ body {
 
 /* ---------- Botones de la marca ---------- */
 .btn-success { --bs-btn-bg: var(--verde); --bs-btn-border-color: var(--verde); --bs-btn-hover-bg: var(--verde-oscuro); --bs-btn-hover-border-color: var(--verde-oscuro); --bs-btn-active-bg: var(--verde-oscuro); }
+
+/* ---------- Tabla en móvil ---------- */
+@media (max-width: 575.98px) {
+  .table > :not(caption) > * > * { padding: .5rem .35rem; }
+  .table { font-size: .9rem; }
+}
