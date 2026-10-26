@@ -1,9 +1,5 @@
 # Supermercado Central – Gestión de inventario
 
-**Curso:** Desarrollo Frontend II (PFY2202) · Duoc UC · Semana 1 – Actividad formativa 1
-**Alumno:** Tomás Zúñiga
-**Repositorio:** `supermercado-tomas-zuniga-PFY2202`
-
 Sitio web de gestión de inventario para un supermercado, desarrollado con **React** y **React Router**. Tiene una página principal (home) con el inventario y un **menú inferior** que permite navegar a otras dos páginas sin recargar el sitio.
 
 ## Páginas y rutas
@@ -15,14 +11,6 @@ Sitio web de gestión de inventario para un supermercado, desarrollado con **Rea
 | `/preguntas-frecuentes` | **Preguntas frecuentes** | Acordeón con preguntas sobre el uso del inventario. |
 | cualquier otra | **Página no encontrada** | Mensaje de error con enlace para volver al inicio. |
 
-## Cómo se usa React Router
-
-- `main.jsx`: envuelve la aplicación en `<HashRouter>`.
-- `App.jsx`: define las rutas con `<Routes>` y `<Route>`, incluida la ruta comodín `*` para páginas inexistentes.
-- `Layout.jsx`: estructura común con `<Outlet />`, que es donde se dibuja la página de la ruta actual. También usa `useLocation` para subir al inicio de la página y cambiar el título de la pestaña en cada navegación.
-- `MenuInferior.jsx`: usa `<NavLink>`, que cambia de página sin recargar y marca la opción activa.
-
-Se usa `HashRouter` (rutas con `#`, por ejemplo `/#/quienes-somos`) para que el sitio funcione en GitHub Pages incluso al recargar una página interna.
 
 ## Estructura del proyecto
 
@@ -72,16 +60,6 @@ npm run build      # genera la carpeta dist para producción
 npm run preview    # prueba la versión de producción
 ```
 
-## Publicar en GitHub Pages
-
-1. Sube el código a la rama `main` del repositorio público.
-2. Ejecuta `npm run deploy`: compila el proyecto y sube la carpeta `dist` a la rama `gh-pages`.
-3. En GitHub: **Settings → Pages → Branch: `gh-pages` / `/ (root)`** y guarda.
-4. El sitio queda en `https://TU-USUARIO.github.io/supermercado-tomas-zuniga-PFY2202/`.
-
-## Trabajo colaborativo con Git
-
-El repositorio se comparte con el docente desde **Settings → Collaborators** (o con el enlace, al ser público). El historial de commits muestra cada etapa del desarrollo: configuración inicial, React Router y páginas, e inventario.
 
 ## Tecnologías
 
